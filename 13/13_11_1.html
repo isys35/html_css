@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Пример использования элементов списка определений для форматирования формы</title>
+</head>
+<body leftmargin="100" rightmargin="100" text="#78bed0" bgcolor="#112232">
+    <h2 align="center">Заполните небольшую анкету</h2>
+    <form action="">
+            <fieldset>
+                <legend>
+                    <i><font size="-1"><b>Читали ли вы Ф.М.Достоевского?</b></font></i>
+                </legend>
+                <dt><input type="radio" name="dost" value="none" onclick="closedost.js">
+                    Я не читал ни одного произведения Достоевского
+                </dt>
+                <dt><input type="radio" name="dost" value="yes" onclick="opendost.js" checked>
+                    Я читал произведения Достоевского. Далее укажите какие именно:
+                    <dd>
+                        <input type="checkbox" name="idiot" value="yes"> "Идиот"
+                    </dd>
+                    <dd>
+                        <input type="checkbox" name="karamazov" value="yes"> "Братья Карамазовы"
+                    </dd>
+                </dt>
+            </fieldset>
+        <fieldset>
+            <legend>
+                <i><font size="-1"><b>Читали ли вы И.С.Тургенева?</b></font></i>
+            </legend>
+            <dt><input type="radio" name="turg" value="none" onclick="closeturg.js">
+                    Я не читал ни одного произведения Тургенева
+                </dt>
+                <dt><input type="radio" name="turg" value="yes" onclick="openturg.js" checked>
+                    Я читал произведения Тургенева. Далее укажите какие именно:
+                    <dd>
+                        <input type="checkbox" name="zapiski" value="yes"> "Записки охотника"
+                    </dd>
+                    <dd>
+                        <input type="checkbox" name="otciideti" value="yes"> "Отцы и дети"
+                    </dd>
+                </dt>
+        </fieldset>
+        <input type="submit">
+    </form>
+</body>
+</html>
