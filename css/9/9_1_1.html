@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Демонстрация использования CSS-свойства еупорядоченных списков list-style-position</title>
+    <style type="text/css">
+        ul{
+            padding: 30px;
+            border: double gray;
+            font-family: "Arial";
+            background-color: white;
+        }
+        body{
+            text-align: center;
+            background-color: lightgray;
+        }
+        th{font-size: 14pt}
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Список с inside-маркером</th>
+        <th>Список с outside-маркером</th>
+    </tr>
+    <tr>
+        <td>
+            <ul style="list-style-position: outside">
+                <h5 align="center">Lorem ipsum dolor.</h5>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum dolor.Lorem ipsum dolor.</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum dolor.</li>
+            </ul>
+        </td>
+        <td>
+            <ul style="list-style-position: inside">
+                <h5 align="center">Lorem ipsum dolor.</h5>
+                <li>Lorem ipsum dolor.gsfdgfdgsfdgdsf</li>
+                <li>Lorem ipsum dolor.Lorem ipsum dolor.</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum dolor.</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
