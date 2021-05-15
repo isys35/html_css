@@ -1,0 +1,62 @@
+$myMargin: 0px auto;
+$myColor: red;
+$myWidth: 600px;
+$myFontsize1: 13px;
+$myFontsize2: 18px;
+$myFontsize3: 25px;
+$myWidth: 500px;
+$myMargin: 0px auto;
+$myPadding: 20px;
+$thickness: 1px;
+$border: solid red;
+$myBAckground: #e6e6e6;
+
+body {
+    background: darken($myBAckground, 20%);
+}
+
+h1 {
+    color: $myColor;
+    margin:$myMargin;
+}
+
+h1, h2 {
+    color: lighten($myColor, 40%);
+}
+
+
+
+@mixin border {
+   border: 1px solid red;
+}
+
+#samplepara {
+    color: $myColor;
+    padding: $myPadding + 30;
+}
+
+#list1 {
+    color: $myColor;
+    border: $thickness+5 $border
+}
+
+#container {
+    width: $myWidth;
+    margin: $myMargin;
+    @include border;
+    p {
+        font-family: Arial;
+        font-size: $myFontsize1;
+    }
+
+    h1 {
+        font-family: Tahoma;
+        font-size: $myFontsize2;
+    }
+
+    h2 {
+        font-family: Helvetica;
+        font-size: $myFontsize3;
+    }
+}
+

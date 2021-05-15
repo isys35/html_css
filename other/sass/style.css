@@ -1,0 +1,33 @@
+body {
+  background: #b3b3b3; }
+
+h1 {
+  color: red;
+  margin: 0px auto; }
+
+h1, h2 {
+  color: #ffcccc; }
+
+#samplepara {
+  color: red;
+  padding: 50px; }
+
+#list1 {
+  color: red;
+  border: 6px solid red; }
+
+#container {
+  width: 500px;
+  margin: 0px auto;
+  border: 1px solid red; }
+  #container p {
+    font-family: Arial;
+    font-size: 13px; }
+  #container h1 {
+    font-family: Tahoma;
+    font-size: 18px; }
+  #container h2 {
+    font-family: Helvetica;
+    font-size: 25px; }
+
+/*# sourceMappingURL=style.css.map */
