@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex-basis Базовая ширина элемента для распределения свободного пространства контейнера.</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 125px;
+            background-color: #efefef;
+            margin: 10px 0;
+        }
+        .item {
+            background-color: #ffa500;
+            padding: 10px;
+            margin: 1px;
+            box-sizing: border-box;
+        }
+        .item:nth-child(4) {
+            flex-basis: 50%;
+        }
+        .item:nth-child(5) {
+            flex-basis: content;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5<br />Lorem ipsum dolor sit amet</div>
+    </div>
+</body>
+</html>

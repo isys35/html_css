@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex-wrap Управление переносом</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            background-color: #efefef;
+            margin: 10px 0;
+        }
+        .nowrap {
+            flex-wrap: nowrap;
+        }
+        .wrap {
+            flex-wrap: wrap;
+        }
+        .wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+        .item {
+            background-color: #ffa500;
+            padding: 10px;
+            margin: 1px;
+            width: calc(50% - 2px);
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    flex-wrap: nowrap;
+
+    <div class="container nowrap">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    flex-wrap: wrap;
+
+    <div class="container wrap">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    flex-wrap: wrap-reverse;
+
+    <div class="container wrap-reverse">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+</body>
+</html>

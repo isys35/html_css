@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Align-content выравнивание внутри многострочного контейнера</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            height: 125px;
+            background-color: #efefef;
+            margin: 10px 0;
+        }
+        .item {
+            background-color: #ffa500;
+            padding: 10px;
+            margin: 1px;
+            width: calc(33.3333% - 2px);
+            box-sizing: border-box;
+        }
+        .flex-start {
+            align-content: flex-start;
+        }
+        .flex-end {
+            align-content: flex-end;
+        }
+        .center {
+            align-content: center;
+        }
+        .space-between {
+            align-content: space-between;
+        }
+        .space-around {
+            align-content: space-around;
+        }
+        .space-around {
+            align-content: space-around;
+        }
+        .space-evenly {
+            align-content: space-evenly;
+        }
+        .stretch {
+            align-content: stretch;
+        }
+    </style>
+</head>
+<body>
+    align-content: flex-start
+
+    <div class="container flex-start">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    align-content: flex-end
+
+    <div class="container flex-end">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    align-content: center
+
+    <div class="container center">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    align-content: space-between
+
+    <div class="container space-between">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    align-content: space-around
+
+    <div class="container space-around">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    align-content: space-evenly
+
+    <div class="container space-evenly">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    align-content: stretch
+
+    <div class="container stretch">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+</body>
+</html>

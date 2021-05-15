@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex-shrink Коэффициент уменьшения элемента при отсутствии свободного пространства в контейнере.</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: #efefef;
+            margin: 10px 0;
+            height: 125px;
+        }
+        .item {
+            background-color: #ffa500;
+            padding: 10px;
+            margin: 1px;
+            width: calc(50% - 2px);
+            box-sizing: border-box;
+        }
+        .item:nth-child(1) {
+            flex-shrink: 0;
+        }
+        .item:nth-child(2) {
+            flex-shrink: 2;
+        }
+        .item:nth-child(3) {
+            flex-shrink: 4;
+        }
+        .item:nth-child(4) {
+            flex-shrink: 6;
+        }
+        .item:nth-child(5) {
+            flex-shrink: 8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex-flow: сокращение flex-direction и flex-wrap</title>
+    <style>
+        .container {
+            display: flex;
+            height: 100%;
+            background-color: #efefef;
+            margin: 10px 0;
+        }
+        .row-nowrap {
+            flex-flow: row nowrap;
+        }
+        .column-reverse {
+            flex-flow: column-reverse;
+        }
+        .column-wrap {
+            flex-flow: column wrap;
+        }
+        .row-reverse-wrap-reverse {
+            flex-flow: row-reverse wrap-reverse;
+        }
+        .item {
+            background-color: #ffa500;
+            padding: 10px;
+            margin: 1px;
+            width: calc(50% -2px);
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    flex-flow: row nowrap;
+
+    <div class="container row-nowrap">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    flex-flow: column-reverse;
+
+    <div class="container column-reverse">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    flex-flow: column wrap;
+
+    <div class="container column-wrap">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    flex-flow: row-reverse wrap-reverse;
+
+    <div class="container row-reverse-wrap-reverse">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+</body>
+</html>

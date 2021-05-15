@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Justify-content Выравнивание главной оси</title>
+    <style>
+        .container {
+            display: flex;
+            flex-flow: row nowrap;
+            height: 100%;
+            background-color: #efefef;
+            margin: 10px 0;
+        }
+        .flex-start {
+            justify-content: flex-start;
+        }
+        .flex-end {
+            justify-content: flex-end;
+        }
+        .center {
+            justify-content: center;
+        }
+        .space-between {
+            justify-content: space-between;
+        }
+        .space-around {
+            justify-content: space-around;
+        }
+        .space-evenly {
+            justify-content: space-evenly;
+        }
+        .item {
+            background-color: #ffa500;
+            padding: 10px;
+            margin: 1px;
+        }
+    </style>
+</head>
+<body>
+    justify-content: flex-start
+
+    <div class="container flex-start">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    justify-content: flex-end
+
+    <div class="container flex-end">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    justify-content: center
+
+    <div class="container center">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    justify-content: space-between
+
+    <div class="container space-between">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    justify-content: space-around
+
+    <div class="container space-around">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    justify-content: space-evenly
+
+    <div class="container space-evenly">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+</body>
+</html>

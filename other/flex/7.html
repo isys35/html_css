@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Align-items Выравнивание поперечной оси</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: nowrap;
+            height: 100%;
+            background-color: #efefef;
+            margin: 10px 0;
+        }
+        .flex-start {
+            align-items: flex-start;
+        }
+        .flex-end {
+            align-items: flex-end;
+        }
+        .center {
+            align-items: center;
+        }
+        .baseline {
+            align-items: baseline;
+        }
+        .stretch {
+            align-items: stretch;
+        }
+        .item {
+            background-color: #ffa500;
+            padding: 10px;
+            margin: 1px;
+            width: calc(50% -2px);
+        }
+        .item:nth-child(1) {
+            height: 30px;
+        }
+        .item:nth-child(2) {
+            height: 40px;
+        }
+        .item:nth-child(3) {
+            height: 50px;
+        }
+        .item:nth-child(4) {
+            height: 100px;
+        }
+        .item:nth-child(5) {
+            height: 70px;
+        }
+
+    </style>
+</head>
+<body>
+    align-items: flex-start
+
+    <div class="container flex-start">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    align-items: flex-end
+
+    <div class="container flex-end">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    align-items: center
+
+    <div class="container center">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    align-items: baseline
+
+    <div class="container baseline">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    align-items: stretch
+
+    <div class="container stretch">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+</body>
+</html>
